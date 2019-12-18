@@ -1,0 +1,49 @@
+.circulo {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
+
+
+@keyframes changeColor {
+    0% {
+    background:red; /* Primer fotograma */
+    margin-top: 0px;
+    }
+
+    25% {
+        background:red; /* Primer fotograma */
+        width: 90px;
+        height: 110px;     
+        }
+
+    50% {
+        background: red; /* Primer fotograma */
+        }
+
+
+    75% {
+        background:ORANGE; /* Primer fotograma */
+        width: 90px;
+        height: 110px;
+        }
+
+    100% {
+    background: orange; /* Último fotograma */
+    margin-top: 650px;
+    }
+    }
+
+
+.circulo {
+    animation-name: changeColor;
+    animation-timing-function: cubic-bezier(0.34,1.72,0.81,-0.43);
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+
+}
+
